@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- remixicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+  <!-- css -->
+  <link rel="stylesheet" href="webdev.css">
+  <!-- head web -->
+  <title>TechIgnite</title>
+  <!-- icon web -->
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+  <!-- start body -->
+  <!--=============== preloader =============== -->
+  <div id="preloader"></div>
+    <!-- ========== header ========== -->
+    <!-- navbar dekstop -->
+    <header class="header fixed-top container-fluid">
+      <div class="navbar">
+        <div class="navjudul">
+          <a href="beranda.html">
+            <h3>TechIgnite</h3>
+          </a>
+        </div>
+
+        <div class="navlink">
+          <a href="beranda.html">Beranda</a>
+          <a href="bootcamp.html" class="ac">Bootcamp</a>
+          <a href="layanan.html">Layanan</a>
+        </div>
+
+        <!-- login -->
+        <div class="navbutton">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="border-radius:50%;">
+            <i class="ri-user-fill"></i>
+          </button>
+          
+          <div class="offcanvas offcanvas-start lgn" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title text-light" id="staticBackdropLabel">Masuk</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <!-- login form -->
+                <div class="form-box login">
+                  
+                  <form action="#">
+                    <div class="input-box">
+                      <span class="icon"><i class="ri-mail-fill"></i></span>
+                      <input type="email" required>
+                      <label>Gmail</label>
+                    </div>
+          
+                    <div class="input-box">
+                      <span class="icon"><i class="ri-lock-2-fill"></i></span>
+                      <input type="password" required>
+                      <label>Kata Sandi</label>
+                    </div>
+          
+                    <div class="remember-forgot">
+                      <label><input type="checkbox">Ingat saya</label>
+                        <a href="#">Lupa Kata Sandi?</a>
+                    </div>
+                    <div class="baten">
+                      <button type="submit" class="btnlgggl">Masuk</button>
+                      <button type="submit" class="btnggg"><i class="ri-google-fill"></i> Masuk dengan Google</button>
+                    </div>
+                    <div class="login-register">
+                      <p>Tidak memiliki Akun?<a href="#" class="register-link"> Daftar</a></p>
+                    </div>
+          
+                  </form>
+                </div>
+                <!-- end form login -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- navbar mobile -->
+    <div class="navlinkmob fixed-bottom container-fluid">
+      <div class="navigation">
+        <ul>
+
+          <li class="list">
+            <a href="beranda.html">
+              <span class="ikon"><i class="ri-home-2-fill"></i></span>
+              <span class="teks">Beranda</span>
+            </a>
+          </li>
+
+          <li class="list active">
+            <a href="bootcamp.html">
+              <span class="ikon"><i class="ri-macbook-line"></i></span>
+              <span class="teks">Bootcamp</span>
+            </a>
+          </li>
+          
+          <li class="list">
+            <a href="layanan.html">
+              <span class="ikon"><i class="ri-building-fill"></i></span>
+              <span class="teks">Layanan</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- ========== opening ========== -->
+    <div class="opening container-fluid pt-5 pb-2">
+      <div class="opening1 pt-5">
+        <img src="img/uiux.jpg" class="img-fluid" alt="" style="width:555px; border-radius:10px;">
+      </div>
+
+      <div class="opening2 pt-5 ">
+        <div class="jdl">
+          <h1 class="text-light">UI/UX RESEARCH & DESIGN</h1>
+        </div>
+
+        <div class="deskripsi" style="margin-top:-10px;">
+          <p class="text-light">Masifnya pengembangan produk digital seperti Aplikasi dan Website, membuat profesi UI-UX Researcher and Designer terbuka lebar. Skill ini semakin banyak dicari seiring tingginya kompetisi antar tech product. Asah skill melalui pelatihan intensif dan live class di Bootcamp UI-UX Research and Design dan belajar langsung dari para experts dari Top Companies di Indonesia</p>
+        </div>
+
+        <div class="harga" style="margin-top:-10px;">
+          <div class="harga1">
+            <h3 class="text-light">Batch 7</h3>
+            <p class="text-light mb-0 ">Rp. 200.000,00</p>
+            <p class="text-light  mb-0 tgl">26 September 2024 - 31 Oktober 2024</p>
+          </div>
+          <div class="harga2">
+            <h3 class="text-light">Batch 8</h3>
+            <p class="text-light mb-0 ">Rp. 200.000,00</p>
+            <p class="text-light  mb-0 tgl">14 November 2024 - 19 Desember 2024</p>
+          </div>
+        </div>
+
+        <div class="dftr mt-2">
+          <button type="button" class="btn btn-primary" id="liveToastBtn">Daftar Sekarang</button>
+
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header pmr">
+                <strong class="me-auto">Harap masukkan akun anda terlebih dahulu  <i class="ri-error-warning-fill"></i></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== detail ========== -->
+    <div class="accordion me-5 ms-5 mt-5 mb-2" id="accordionPanelsStayOpenExample">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+            <span>Prospek Karier</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p class="mb-0"><span class="fw-bold">Ikuti Intensive Bootcamp dan dapatkan balik modal secara berlipat dari gaji pertamamu. Berbagai pilihan profesi yang bisa dijalani saat memiliki skill UIUX:</span></p>
+            <p class="mb-0">
+              <i class="ri-award-fill"></i> UI-UX Designer : Rp 5-23 Juta/bulan
+            </p>
+            <p class="mb-0">
+              <i class="ri-award-fill"></i> UX Writer : Rp 5-11 Juta/bulan
+            </p>
+            <p class="mb-0">
+              <i class="ri-award-fill"></i> UX Researcher : Rp 8-17 Juta/bulan
+            </p>  
+            <p class="mb-0">
+              <i class="ri-award-fill"></i> Product Designer : Rp 7-30 Juta/bulan
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mt-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <span>Yang akan kamu dapatkan</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p class="mb-0 fw-bold">Upgrade skill mulai dari memahami konsep, analisa studi kasus, hingga praktik untuk optimalisasinya. Kuasai berbagai skill dan tools di bidang UI-UX untuk karier kamu. Contoh Skill & Portfolio yang bisa kamu miliki:</p>
+            <p class="mb-0"><i class="ri-vip-diamond-fill text-info"></i> Figma</p>
+            <p class="mb-0"><i class="ri-vip-diamond-fill text-info"></i> User Research & Persona </p>
+            <p class="mb-0"><i class="ri-vip-diamond-fill text-info"></i> Design System </p>
+            <p class="mb-0"><i class="ri-vip-diamond-fill text-info"></i> UX Witing</p>
+            <p class="mb-0"><i class="ri-vip-diamond-fill text-info"></i> Prototyping</p>
+            <p class="mb-0"><i class="ri-vip-diamond-fill text-info"></i> User Journey</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mt-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <span>Benefit Bootcamp</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+
+            <p class="fw-bold mb-0">Materi Kelas</p>
+            <p class="mb-0"><i class="ri-bard-fill"></i>  10x sesi live class bersama mentor experts dari top companies.</p>
+            <p class="mb-0"><i class="ri-bard-fill"></i>  Tutor berpengalaman dengan minimal level lead/manager/head top companies.</p>
+            <p class="mb-0"><i class="ri-bard-fill"></i>  Latihan dan praktik di tiap sesi.</p>
+            <p class="mb-0"><i class="ri-bard-fill"></i>  Sesi sharing pengalaman bersama expert.</p>
+            <p class=""><i class="ri-bard-fill"></i>  Terdapat sesi persiapan karir untuk persiapan berkas lamaran kerja (CV, Surat Lamaran Kerja, Interview, Linkedin).</p>
+
+            <p class="fw-bold mb-0">Setelah Kelas</p>
+            <p class="mb-0"><i class="ri-sparkling-fill"></i>  Mendapat rekaman video setiap sesi untuk dipelajari kembali</p>
+            <p class=""><i class="ri-sparkling-fill"></i>  Mendapatkan E-Certificate & Rapor setelah semua sesi bootcamp selesai</p>
+
+            <p class="mb-0"><span class="fw-bold">[Opsional] +Additional Fee jika ingin bergabung program Final Project secara berkelompok.</span>Pembayaran dilakukan terpisah, saat Bootcamp dimulai.</p>
+            <p class="fw-bold mb-0">Final Portfolio Project:</p>
+            <p class="mb-0"><i class="ri-bard-fill"></i>  Dibentuk team project untuk pembuatan final portofolio.</p>
+            <p class="mb-0"><i class="ri-bard-fill"></i>  Portfolio dibuat komprehensif sesuai standar melamar kerja.</p>
+            <p class="mb-0"><i class="ri-bard-fill"></i>  3x sesi mentoring dan review untuk final portfolio project.</p>
+            <p class=""><i class="ri-bard-fill"></i>  Special award untuk tim terbaik.</p>
+            
+            <p class="fw-bold mb-0">Akselerasi Karir:</p>
+            <p class="mb-0"><i class="ri-sparkling-fill"></i>  Mendapat template CV & Surat Lamaran kerja versi Bahasa Inggris & Bahasa Indonesia.</p>
+            <p class=""><i class="ri-sparkling-fill"></i>  Akses Ratusan Video E-Learning dengan ratusan sertifikat yang bisa didapatkan.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mt-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            Kurikulum & Silabus 
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <div class="p1">
+              <p class="mb-0 fw-bold">Dirancang & Belajar Langsung Dari Mentor Expert!</p>
+              <p class="mb-0"><i class="ri-user-star-line text-warning-emphasis"></i> Korniawan Prabowo - Senior UX Engineer & Web Design Specialist at Evermos</p>
+              <p class="mb-0"><i class="ri-user-star-line text-warning-emphasis"></i> Gabrielle Ratri - UX Writer at DANA</p>
+              <p class="mb-0"><i class="ri-user-star-line text-warning-emphasis"></i> Nevitha Putri - Senior UI/UX Designer for product AI App , at Opto AI California US</p>
+              <p class=""><i class="ri-user-star-line text-warning-emphasis"></i>  Satia Putra - Senior UX Researcher at Tiket.com</p>
+            </div>
+            <div class="p2">
+              <p class="mb-0 fw-bold">Jadwal Kelas:</p>
+              <p class="mb-0 fw-bold"><i class="ri-check-double-fill text-success"></i> Batch 7: 26 September 2024 - 31 Oktober 2024</p>
+              <p class="mb-0">Setiap hari Selasa dan Kamis</p>
+              <p class="">Pukul 19.30 - 21.30 WIB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mt-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+            Sistem Belajar
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p class="mb-0"><i class="ri-check-double-line text-success"></i> Sesi kelas & Praktik Bersama Experts</p>
+            <p class="mb-0"><i class="ri-check-double-line text-success"></i> Pembuatan & Review Portofolio</p>
+            <p><i class="ri-check-double-line text-success"></i> Bimbingan Persiapan Karir</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mt-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+            Saya tidak memiliki pengalaman sama sekali di bidang UI/UX, hingga background IT. Apakah saya bisa mengikuti kelas?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p>Tentu bisa! Pada Bootcamp UI/UX ini kamu akan diampu oleh tutor expert di bidangnya dan juga akan menyampaikan materi dari level dasar (basic) hingga level lanjut (advance) yang mudah dipahami. Sehingga kamu tidak perlu khawatir sulit memahami materi walaupun kamu tidak memiliki background pada bidang ini sebelumnya.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item mt-1">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+            Bagaimana jika saya tidak mengikuti kelas, apakah saya masih bisa mengikuti materi?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p>Tentu saja! Jika kamu tidak dapat hadir pada sesi kelas, kamu bisa mengikuti materi melalui <span class="fst-italic">video recording</span> setiap sesinya sehingga kamu tidak tertinggal materi yang telah disampaikan di sesi kelas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ========== bootcamp ========== -->
+    <h2 class="text-light ms-5 mb-0 pt-5">Ikuti Juga Bootcamp Lainnya</h2>
+    <p class="text-light ms-5 pb-2">Lanjut pelajari skill bersama tutor terbaik berpengalaman di bidangnya.</p>
+    
+    <div class="bootcamp ms-5" style="margin-bottom:70px;">
+
+      <a href="dataansyn.html" class="btcmpbody">
+        <div class="bootcampbody" style="line-height:1;">
+          <div class="btbdy1" style="width:320px;">
+            <img src="img/da.jpg" class="img-fluid" alt="">
+            <h5 class="text-justify mb-2 text-light ms-2 mt-1">DATA SCIENCE & ANALYTICS</h5>
+            <p class="text-light mb-0 ms-2"><i class="ri-calendar-event-line mb-0"></i> 11 September 2024</p>
+            <p class="text-light mb-1 ms-2"><i class="ri-price-tag-3-fill"></i>  Rp. 590.000</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="digitalmar.html" class="btcmpbody">
+        <div class="bootcampbody" style="line-height:1;">
+          <div class="btbdy1" style="width:320px;">
+            <img src="img/dm.jpg" class="img-fluid" alt="">
+            <h5 class="text-justify mb-2 text-light ms-2 mt-1">DIGITAL MARKETING</h5>
+            <p class="text-light mb-0 ms-2"><i class="ri-calendar-event-line mb-0"></i> 9 Oktober 2024</p>
+            <p class="text-light mb-1 ms-2"><i class="ri-price-tag-3-fill"></i>  Rp. 590.000</p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="webdev.html" class="btcmpbody">
+        <div class="bootcampbody" style="line-height:1;">
+          <div class="btbdy1" style="width:320px;">
+            <img src="img/wd.jpg" class="img-fluid" alt="">
+            <h5 class="text-justify mb-2 text-light ms-2 mt-1">WEBSITE DEVELOPMENT</h5>
+            <p class="text-light mb-0 ms-2"><i class="ri-calendar-event-line mb-0"></i> 17 Oktober 2024</p>
+            <p class="text-light mb-1 ms-2"><i class="ri-price-tag-3-fill"></i>  Rp. 200.000</p>
+          </div>
+        </div>
+      </a>
+    
+    </div>
+    <!-- ========== footer ========= -->
+    <section class="footer pt-5">
+    <div class="container-fluid ">
+
+          <div class="container d-flex justify-content-evenly rir" style="border-radius: 20px; padding: 20px; background:rgba(255, 255, 255, 0.145);
+          border:2px solid rgba(255, 255, 255, 0.145); margin-top:-70px;">
+            <h4 class="text-light fw-bold">Kembangkan Bisnis Anda Dengan Cepat Dengan TechIgnite</h4>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" style="padding: 20px 20px" placeholder="Masukkan Gmail Anda" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;">Subscribe</button>
+            </div>
+          </div>
+
+          <hr style="color:white;">
+          <div class="row ftr" style="margin-top: 10px;">
+            <div class="col d-flex flex-column ror">
+              <h6>Company</h6>
+              <a href="beranda.html">Beranda</a>
+              <a href="bootcamp.html">Bootcamp</a>
+              <a href="layanan.html">Layanan</a>
+            </div>
+            <div class="col d-flex flex-column ror">
+              <h6>Help</h6>
+              <a href="#">Customer Report</a>
+              <a href="#">Delivary Details</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="col d-flex flex-column ror">
+              <h6>Resources</h6>
+              <a href="#">Free E-books</a>
+              <a href="#">Development Tutorial</a>
+              <a href="#">How to - blog</a>
+            </div>
+            <div class="col d-flex flex-column ror mb-2">
+              <h6>Links</h6>
+              <a href="#">Free E-books</a>
+              <a href="#">Development Tutorial</a>
+              <a href="#">How to - blog</a>
+            </div>
+
+          <!-- <hr style="color:white;">
+          <p class="text-light text-center">Copyright @2024</p> -->
+          
+          </div>
+    </div>
+    </section>
+  <!-- end body -->
+  <!-- js -->
+  <script src="script.js"></script>
+  <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+
+    if (toastTrigger) {
+      const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+      toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
+      })
+    }
+  </script>
+</body>
+</html>

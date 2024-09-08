@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- remixicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+  <!-- css -->
+  <link rel="stylesheet" href="bootcampstyle.css">
+  <!-- head web -->
+  <title>TechIgnite</title>
+  <!-- icon web -->
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+    <!--=============== preloader =============== -->
+    <div id="preloader"></div>
+    <!-- ========== header ========== -->
+    <!-- navbar dekstop -->
+    <header class="header fixed-top container-fluid">
+      <div class="navbar">
+        <div class="navjudul">
+          <a href="beranda.html">
+            <h3>TechIgnite</h3>
+          </a>
+        </div>
+
+        <div class="navlink">
+          <a href="beranda.html">Beranda</a>
+          <a href="bootcamp.html" class="ac">Bootcamp</a>
+          <a href="layanan.html">Layanan</a>
+        </div>
+
+        <!-- login -->
+        <div class="navbutton">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="border-radius:50%;">
+            <i class="ri-user-fill"></i>
+          </button>
+          
+          <div class="offcanvas offcanvas-start lgn" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title text-light" id="staticBackdropLabel">Masuk</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <!-- login form -->
+                <div class="form-box login">
+                  
+                  <form action="#">
+                    <div class="input-box">
+                      <span class="icon"><i class="ri-mail-fill"></i></span>
+                      <input type="email" required>
+                      <label>Gmail</label>
+                    </div>
+          
+                    <div class="input-box">
+                      <span class="icon"><i class="ri-lock-2-fill"></i></span>
+                      <input type="password" required>
+                      <label>Kata Sandi</label>
+                    </div>
+          
+                    <div class="remember-forgot">
+                      <label><input type="checkbox">Ingat saya</label>
+                        <a href="#">Lupa Kata Sandi?</a>
+                    </div>
+                    <div class="baten">
+                      <button type="submit" class="btnlgggl">Masuk</button>
+                      <button type="submit" class="btnggg"><i class="ri-google-fill"></i> Masuk dengan Google</button>
+                    </div>
+                    <div class="login-register">
+                      <p>Tidak memiliki Akun?<a href="#" class="register-link"> Daftar</a></p>
+                    </div>
+          
+                  </form>
+                </div>
+                <!-- end form login -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- navbar mobile -->
+    <div class="navlinkmob fixed-bottom container-fluid">
+      <div class="navigation">
+        <ul>
+
+          <li class="list">
+            <a href="beranda.html">
+              <span class="ikon"><i class="ri-home-2-fill"></i></span>
+              <span class="teks">Beranda</span>
+            </a>
+          </li>
+
+          <li class="list active">
+            <a href="bootcamp.html">
+              <span class="ikon"><i class="ri-macbook-line"></i></span>
+              <span class="teks">Bootcamp</span>
+            </a>
+          </li>
+          
+          <li class="list">
+            <a href="layanan.html">
+              <span class="ikon"><i class="ri-building-fill"></i></span>
+              <span class="teks">Layanan</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+
+        </ul>
+      </div>
+    </div>
+
+      <!-- ========== pembuka ========= -->
+      <div class="opening pb-3">
+
+        <div class="opening2">
+          <img src="img/lgdd.png" class="pt-2 img-fluid hero-img1" alt="hero-img1" style="max-width:300px;">
+        </div>
+
+        <div class="opening1">  
+          <div class="container-fluid hme">
+              <div class="container">
+                <h1 class="text-light text-left fw-bold hero-text">Bootcamp yang Memberi Hasil. Fokus Praktik & Portfolio.</h1>
+                
+                <p class="text-light herotextp">Tingkatkan Skill dan Portfoliomu dengan Bootcamp yang Terbukti Berhasil.
+                  Belajar Full Online dengan Bimbingan dari Praktisi Senior. Lebih dari sekadar Webinar, kami berkomitmen untuk membantu ribuan alumni berkembang dan sukses.</p>
+                <a href="#program">
+                  <button type="button" class="btn btn-primary btn-home btn-lg">Lihat Program Pilihan</button><br>
+                </a>
+                <div class=" opn1 d-flex">
+                  <img src="img/pf-removebg-preview.png" class="person">
+                  <p class="text-light ms-1 pt-3">10.000+ Telah Lulus</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ========== program ========== -->
+      <div class="bootcamp pt-5" id="program">
+
+        <div class="btcmp btcmpp d-flex flex-wrap">
+          <a href="webdev.html" class="btcmpbody">
+          <div class="bootcampbody" style="line-height:1;">
+            <div class="btbdy1" style="width:432px;">
+              <img src="img/wd.jpg" alt="">
+              <h6 class="text-justify mb-2 text-light ms-2 mt-1">WEBSITE DEVELOPMENT</h6>
+              <p class="text-light mb-0 ms-2"><i class="ri-calendar-event-line mb-0"></i> 17 Oktober 2024</p>
+              <p class="text-light mb-1 ms-2"><i class="ri-price-tag-3-fill"></i>  Rp. 200.000</p>
+            </div>
+          </div>
+          </a>
+      
+          <a href="dataansyn.html" class="btcmpbody">
+          <div class="bootcampbody" style="line-height:1;">
+            <div class="btbdy1" style="width:432px;">
+              <img src="img/da.jpg" alt="">
+              <h6 class="text-justify mb-2 text-light ms-2 mt-1">DATA SCIENCE & ANALYTICS</h6>
+              <p class="text-light mb-0 ms-2"><i class="ri-calendar-event-line mb-0"></i> 11 September 2024</p>
+              <p class="text-light mb-1 ms-2"><i class="ri-price-tag-3-fill"></i>  Rp. 590.000</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        
+        <div class="btcmp d-flex flex-wrap">
+          <a href="digitalmar.html" class="btcmpbody">
+          <div class="bootcampbody" style="line-height:1;">
+            <div class="btbdy1" style="width:432px;">
+              <img src="img/dm.jpg" alt="">
+              <h6 class="text-justify mb-2 text-light ms-2 mt-1">DIGITAL MARKETING</h6>
+              <p class="text-light mb-0 ms-2"><i class="ri-calendar-event-line mb-0"></i> 9 Oktober 2024</p>
+              <p class="text-light mb-1 ms-2"><i class="ri-price-tag-3-fill"></i>  Rp. 590.000</p>
+            </div>
+          </div>
+          </a>
+        
+          <a href="uiux.html" class="btcmpbody">
+          <div class="bootcampbody" style="line-height:1;">
+            <div class="btbdy1" style="width:432px;">
+              <img src="img/uiux.jpg" alt="">
+              <h6 class="text-justify mb-2 text-light ms-2 mt-1">UI/UX</h6>
+              <p class="text-light mb-0 ms-2"><i class="ri-calendar-event-line mb-0"></i> 26 September 2024</p>
+              <p class="text-light mb-1 ms-2"><i class="ri-price-tag-3-fill"></i>  Rp. 200.000</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        
+      </div>
+
+      <!-- ========== layanan ========== -->
+      <section class="layanan pt-2">
+
+        <div class="dsk1 pt-5">
+          <img src="img/ik-removebg-preview.png" alt="" class="img-layanan">
+        </div>
+
+        <div class="dsk">
+          <h2 class="text-light">Pelatihan & Bootcamp untuk Perusahaan</h2>
+
+          <p class="text-light">Dapatkan akses dukungan training khusus untuk perusahaanmu. Manfaatkan fitur-fitur unggulan yang dirancang untuk meningkatkan performa dan pengembangan karyawan.</p>
+
+          <div class="dskimg mb-2">
+            <img src="img/ror_page-0001.png" alt="" class="iconic">
+            <img src="img/ror_page-0002.png" alt="" class="iconic">
+            <img src="img/ror_page-0003.png" alt="" class="iconic">
+            <img src="img/ror_page-0004.png" alt="" class="iconic">
+          </div>
+
+          <a href="layanan.html">
+            <button type="button" class="btn btn-primary btn-home btn-lg">Lihat Program Pilihan</button><br>
+          </a>
+        </div>
+        
+      </section>
+
+      <!-- ========== story/review ========== -->
+      <section class="story-review">
+        <div class="container mt-5">
+          <div class="container-fluid" style="margin-top: 70px;">
+              <h3 class="text-center text-light fw-bold">Telah Teruji Membawa Perubahan dan Menembus Batas</h3>
+              <div class="mentor-container d-flex flex-wrap justify-content-center">
+                
+                <div class="mntr d-flex flex-wrap">
+
+                  <div class="card-review">
+                    <img src="img/dave.png" class="img-fluid">
+                <div class="card-body">
+                    <button type="button" class="btn btn-review mt-1" data-bs-toggle="modal" data-bs-target="#modal1">
+                      Telusuri Kisah
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                        <div class="modal-body">
+                          <h2>Diterima Kerja Sebagai Data Analyst Usai Ikut Bootcamp TechIgnite</h2>
+                        <p>
+                          Namaku Dave, dan aku ingin berbagi kisah tentang bagaimana aku berhasil mendapatkan pekerjaan sebagai Data Analyst setelah mengikuti bootcamp di TechIgnite.
+                        </p>
+                        <p>
+                          Setelah lulus kuliah, aku merasa perlu meningkatkan keterampilan teknisku agar lebih kompetitif di dunia kerja. Aku sadar bahwa kemampuan menganalisis data sangat dibutuhkan di berbagai industri, dan itulah yang mendorongku untuk bergabung dengan Bootcamp TechIgnite yang fokus pada pengembangan keterampilan data analysis.
+                        </p>
+                        <p>
+                          Selama mengikuti bootcamp, aku mendapatkan banyak wawasan baru. Aku belajar tentang berbagai tools dan teknik analisis data yang sebelumnya tidak pernah aku ketahui. Para instruktur di TechIgnite benar-benar membimbingku, dari dasar-dasar statistik hingga cara menggunakan software analisis data seperti Python dan SQL.
+                        </p>
+                        <p>
+                          Setelah menyelesaikan program tersebut, aku mulai mencari pekerjaan dengan lebih percaya diri. Alhamdulillah, usaha dan pembelajaran selama bootcamp membuahkan hasil. Aku diterima bekerja sebagai Data Analyst di United Tractor, sebuah perusahaan besar yang bergerak di bidang alat berat.
+                        </p>
+                        <p>
+                          Pengalaman di Bootcamp TechIgnitetidak hanya memberiku pengetahuan, tetapi juga kepercayaan diri yang sangat aku butuhkan untuk memasuki dunia kerja. Sekarang, aku merasa lebih siap untuk menghadapi tantangan-tantangan baru di posisi baruku.
+                        </p>
+                        <p>
+                          Jika kamu sedang mempertimbangkan untuk meningkatkan keterampilanmu, aku sangat merekomendasikan Bootcamp TechIgnite. Pengalaman ini bisa membuka pintu karier yang mungkin sebelumnya terasa sulit dijangkau.✨
+                        </p>
+                        </div>
+                  </div>
+                </div>
+                  </div>
+                  </div>
+
+                  <div class="card-review">
+                      <img src="img/isabel.jpg" class="img-fluid">
+                  <div class="card-body">
+                      <button type="button" class="btn btn-review mt-1" data-bs-toggle="modal" data-bs-target="#modal2">
+                        Telusuri Kisah
+                      </button>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                          <div class="modal-body">
+                            <h2> Menjadi Web Developer Setelah Berlangganan di TechIgnite</h2>
+                            <p>
+                            Namaku Isabella, dan aku ingin berbagi perjalanan karierku yang berubah drastis setelah berlangganan di TechIgnite. Dulu, aku hanya memiliki sedikit pengetahuan tentang pengembangan web, meskipun aku sangat tertarik dengan bidang ini. Namun, tanpa arahan yang jelas dan sumber belajar yang terstruktur, aku sering merasa kewalahan dan tidak tahu harus mulai dari mana.
+                            </p>
+                            <p>
+                            Suatu hari, aku menemukan TechIgnite, sebuah platform pembelajaran yang menawarkan kursus-kursus berkualitas tinggi dalam berbagai bidang teknologi, termasuk web development. Setelah membaca ulasan positif dari banyak orang, aku memutuskan untuk berlangganan dan mulai mengeksplorasi kursus-kursus yang mereka tawarkan.
+                            </p>
+                            <p>
+                            Sejak hari pertama, aku langsung terpikat. Kursus-kursus di TechIgnite disusun dengan sangat baik, dimulai dari dasar-dasar HTML, CSS, dan JavaScript, hingga framework yang lebih canggih seperti React dan Node.js. Setiap modul dijelaskan dengan cara yang mudah dipahami, disertai dengan proyek-proyek praktis yang membantu memperkuat pemahaman dan keterampilanku.
+                            </p>
+                            <p>
+                            Selama beberapa bulan, aku benar-benar terlibat dalam proses belajar. Aku membuat berbagai proyek kecil, dari halaman web sederhana hingga aplikasi web yang lebih kompleks. Setiap langkah dalam proses tersebut membuatku semakin percaya diri bahwa aku bisa menjadi seorang web developer.
+                            </p>
+                            <p>
+                            Setelah merasa cukup siap, aku mulai mencari pekerjaan di bidang web development. Berbekal portofolio proyek yang aku buat selama berlangganan di TechIgnite, aku melamar ke beberapa perusahaan. Tidak butuh waktu lama, aku berhasil mendapatkan pekerjaan sebagai Web Developer di sebuah startup yang sedang berkembang.
+                            </p>
+                            <p>
+                            Pengalaman ini benar-benar mengubah hidupku. TechIgnite tidak hanya memberiku pengetahuan yang aku butuhkan, tetapi juga bimbingan dan struktur yang membantu aku tetap fokus dan berkembang. Jika kamu bercita-cita menjadi seorang web developer, aku sangat merekomendasikan TechIgnite sebagai tempat belajar yang tepat.✨
+                            </p>
+                          </div>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+
+                </div>
+                
+                <div class="mntr d-flex flex-wrap">
+
+                <div class="card-review">
+                    <img src="img/rosa.jpg" class="img-fluid">
+                <div class="card-body">
+                    <button type="button" class="btn btn-review mt-1" data-bs-toggle="modal" data-bs-target="#modal4">
+                      Telusuri Kisah
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                        <div class="modal-body">
+                          <h2>Dapat Banyak Client untuk Agency Setelah Ikut Bootcamp di TechIgnite</h2>
+                          <p>
+                            Namaku Rosa, dan aku ingin berbagi kisah bagaimana mengikuti bootcamp di TechIgnite benar-benar mengubah arah karierku dan membantu agensiku berkembang pesat.
+                          </p>
+                          <p>
+                            Saat itu, aku baru saja memulai agensi kecil yang fokus pada pemasaran digital. Namun, seperti banyak pemula lainnya, aku merasa kesulitan untuk mendapatkan klien. Meskipun aku punya dasar pengetahuan yang cukup, persaingan yang ketat dan tuntutan industri yang terus berkembang membuatku merasa kurang percaya diri.
+                          </p>
+                          <p>
+                            Kemudian, aku memutuskan untuk mengikuti bootcamp di TechIgnite setelah mendengar banyak ulasan positif. Aku merasa ini adalah kesempatan yang tepat untuk memperdalam keterampilan, terutama dalam bidang yang terus berkembang seperti digital marketing, manajemen proyek, dan strategi branding.
+                          </p>
+                          <p>
+                            Selama bootcamp, aku mendapatkan banyak wawasan baru yang langsung dapat diterapkan. Aku belajar tentang tren pemasaran terbaru, teknik optimisasi mesin pencari (SEO) yang lebih efektif, cara membangun kampanye iklan yang sukses, dan banyak lagi. Setiap pelajaran terasa sangat relevan dengan tantangan yang aku hadapi dalam menjalankan agensi.
+                          </p>
+                          <p>
+                            Setelah menyelesaikan bootcamp, aku menerapkan semua yang telah aku pelajari ke dalam strategi agensiku. Hasilnya luar biasa! Dalam beberapa bulan, aku berhasil menarik lebih banyak klien daripada sebelumnya. Teknik yang aku pelajari di TechIgnite membantu agensiku menonjol di pasar yang sangat kompetitif.
+                          </p>
+                          <p>
+                            Kini, agensiku tidak hanya bertahan, tetapi juga berkembang pesat. Kami berhasil menangani berbagai proyek besar, dan aku merasa lebih percaya diri dalam menawarkan layanan kami kepada klien potensial.
+                          </p>
+                          <p>
+                            Pengalaman ini mengajarkanku bahwa dengan pengetahuan dan keterampilan yang tepat, segala rintangan bisa diatasi. TechIgnite tidak hanya memberiku keterampilan baru, tetapi juga membukakan pintu bagi peluang yang lebih besar dalam karierku. Jika kamu ingin membawa agensimu ke level berikutnya, aku sangat merekomendasikan untuk mengikuti bootcamp di TechIgnite.✨
+                          </p>
+                        </div>
+                  </div>
+                </div>
+                  </div>
+                </div>
+
+                <div class="card-review">
+                    <img src="img/wiliam.jpg" class="img-fluid">
+                <div class="card-body">
+                    <button type="button" class="btn btn-review mt-1" data-bs-toggle="modal" data-bs-target="#modal5">
+                      Telusuri Kisah
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                        <div class="modal-body">
+                          <h2>Dari Nol Pengalaman, Akhirnya Diterima Kerja Jadi Digital Marketer</h2>
+                          <p>Namaku William, dan ini adalah cerita perjalananku dari seseorang tanpa pengalaman menjadi seorang Digital Marketer. Saat lulus kuliah, aku merasa bingung dengan apa yang ingin aku lakukan selanjutnya. Aku tidak punya pengalaman kerja yang cukup, apalagi dalam bidang digital marketing, yang saat itu aku hanya tahu dari cerita-cerita orang.
+                          </p>
+                          <p>Namun, aku tidak ingin menyerah begitu saja. Aku mulai mencari cara untuk mengembangkan keterampilan yang relevan dan menemukan program bootcamp di TechIgnite. Dengan harapan dan tekad yang tinggi, aku mendaftar dan mulai belajar dari nol.
+                          </p>
+                          <p>Bootcamp ini benar-benar membuka mataku. Di sana, aku belajar tentang SEO, content marketing, analisis data, dan banyak lagi. Meskipun awalnya terasa sulit, aku terus berusaha dan belajar. Aku terlibat aktif dalam setiap diskusi dan proyek, dan perlahan-lahan aku mulai merasa percaya diri dengan kemampuan yang aku miliki.
+                          </p>
+                          <p>Setelah menyelesaikan bootcamp, tantangan berikutnya adalah mencari pekerjaan. Aku mulai mengirimkan lamaran ke berbagai perusahaan, dan meskipun ada beberapa penolakan, aku tidak berhenti. Berkat semua yang aku pelajari di TechIgnite, akhirnya aku diterima bekerja sebagai SEO Specialist di PT IDStar Cipta Teknologi.
+                          </p>
+                          <p>Pengalaman ini benar-benar mengubah hidupku. Bootcamp TechIgnite memberiku keterampilan yang dibutuhkan untuk sukses dalam dunia digital marketing, dan yang lebih penting, memberiku kepercayaan diri untuk memulai sesuatu yang baru dari nol.
+                          </p>
+                          <p>Aku berharap ceritaku bisa menjadi inspirasi bagi siapa pun yang merasa tidak punya pengalaman atau merasa takut untuk mencoba hal baru. Dengan tekad yang kuat dan bimbingan yang tepat, aku percaya kita semua bisa meraih impian kita.✨
+                        </p>
+                        </div>
+                  </div>
+                </div>
+                  </div>
+                </div>
+
+                </div>
+                
+
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== footer ========= -->
+      <section class="footer">
+        <div class="container-fluid ">
+
+          <div class="container d-flex justify-content-evenly rir" style="border-radius: 20px; padding: 20px; background:rgba(255, 255, 255, 0.145);
+          border:2px solid rgba(255, 255, 255, 0.145); margin-top:-70px;">
+            <h4 class="text-light fw-bold">Kembangkan Bisnis Anda Dengan Cepat Dengan TechIgnite</h4>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" style="padding: 20px 20px" placeholder="Masukkan Gmail Anda" aria-label="Recipient's username" aria-describedby="button-addon2" required>
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;">Subscribe</button>
+            </div>
+          </div>
+
+          <hr style="color:white;">
+          <div class="row ftr" style="margin-top: 10px;">
+            <div class="col d-flex flex-column ror">
+              <h6>Company</h6>
+              <a href="beranda.html">Beranda</a>
+              <a href="bootcamp.html">Bootcamp</a>
+              <a href="layanan.html">Layanan</a>
+            </div>
+            <div class="col d-flex flex-column ror">
+              <h6>Help</h6>
+              <a href="#">Customer Report</a>
+              <a href="#">Delivary Details</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="col d-flex flex-column ror">
+              <h6>Resources</h6>
+              <a href="#">Free E-books</a>
+              <a href="#">Development Tutorial</a>
+              <a href="#">How to - blog</a>
+            </div>
+            <div class="col d-flex flex-column ror mb-2">
+              <h6>Links</h6>
+              <a href="#">Free E-books</a>
+              <a href="#">Development Tutorial</a>
+              <a href="#">How to - blog</a>
+            </div>
+
+          <!-- <hr style="color:white;">
+          <p class="text-light text-center">Copyright @2024</p> -->
+          
+          </div>
+        </div>
+      </section>
+      
+      <script src="script.js"></script>
+</body>
+</html>
